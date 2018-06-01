@@ -37,7 +37,7 @@ public class Firstpage extends javax.swing.JFrame {
         close = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         report = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        search_box = new javax.swing.JTextField();
         search = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         login = new javax.swing.JLabel();
@@ -135,8 +135,8 @@ public class Firstpage extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.setBackground(new java.awt.Color(108, 122, 137));
-        jTextField1.setForeground(new java.awt.Color(228, 241, 254));
+        search_box.setBackground(new java.awt.Color(108, 122, 137));
+        search_box.setForeground(new java.awt.Color(228, 241, 254));
 
         search.setIcon(new javax.swing.ImageIcon("E:\\Dev_Profile\\Desktop\\magnifier.png")); // NOI18N
         search.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -159,6 +159,11 @@ public class Firstpage extends javax.swing.JFrame {
 
         adv_search.setIcon(new javax.swing.ImageIcon("E:\\Dev_Profile\\Desktop\\search.png")); // NOI18N
         adv_search.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        adv_search.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                adv_searchMouseClicked(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -176,7 +181,7 @@ public class Firstpage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(search_box, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(4, 4, 4))
@@ -201,7 +206,7 @@ public class Firstpage extends javax.swing.JFrame {
                         .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(search_box, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(49, 49, 49)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(report)
@@ -273,6 +278,16 @@ public class Firstpage extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_loginMouseClicked
 
+    private void adv_searchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adv_searchMouseClicked
+        // TODO add your handling code here:
+        Advance_search ad=new Advance_search();
+        ad.setVisible(true);
+        ad.pack();
+        ad.setLocationRelativeTo(null);
+        ad.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_adv_searchMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -319,10 +334,10 @@ public class Firstpage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel login;
     private javax.swing.JLabel mini;
     private javax.swing.JLabel report;
     private javax.swing.JLabel search;
+    private javax.swing.JTextField search_box;
     // End of variables declaration//GEN-END:variables
 }
