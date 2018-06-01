@@ -126,11 +126,11 @@ public class Register extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("PASSWORD: ");
+        jLabel8.setText("Password: ");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("USER NAME: ");
+        jLabel9.setText("User name: ");
 
         jTextField1.setBackground(new java.awt.Color(108, 122, 137));
         jTextField1.setForeground(new java.awt.Color(228, 241, 254));
@@ -151,11 +151,11 @@ public class Register extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("EMAIL ADD.: ");
+        jLabel10.setText("Emai Id: ");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("NAME: ");
+        jLabel11.setText("Name: ");
 
         jTextField3.setBackground(new java.awt.Color(108, 122, 137));
         jTextField3.setForeground(new java.awt.Color(228, 241, 254));
